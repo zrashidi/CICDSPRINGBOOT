@@ -24,7 +24,7 @@ jobs:
       run: mvn clean install
 
      - name: Build & push Docker image
-     uses: mr-smithers-excellent/docker-build-push@v5
+       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: 946169008/java-ci-cd-github
         tags: latest
@@ -32,3 +32,4 @@ jobs:
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+
