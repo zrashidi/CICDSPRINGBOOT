@@ -1,4 +1,4 @@
-name: project cicd flow
+name:  my cicd  project
 
 on:
   push:
@@ -20,10 +20,8 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn clean install
-
       - name: Build & push Docker image
         uses: actions/checkout@v3
-
         with:
           image: 946169008/java-ci-cd-github
           tags: latest
