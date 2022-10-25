@@ -22,9 +22,9 @@ jobs:
         run: mvn clean install
 
       - name: Publish to Registry
-      #  uses: elgohr/Publish-Docker-Github-Action@v4
+        uses: elgohr/Publish-Docker-Github-Action@v4
         with:
           name: 946169008/java-ci-cd-github
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+         # password: ${{ secrets.DOCKER_PASSWORD }}
 
