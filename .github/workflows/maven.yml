@@ -22,7 +22,7 @@ jobs:
         run: mvn clean install
 
       - name: Build & push Docker image
-        uses: actions/checkout@v3
+
         run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
         with:
           image: 946169008/java-ci-cd-github
