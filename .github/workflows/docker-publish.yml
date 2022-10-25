@@ -58,8 +58,8 @@ jobs:
         with:
           registry: docker.io
           dockerfile: Dockerfile
-          username: 'zeynabrashidi94@gmail.com'
-          password: 'dp89232112'
+          username: "zeynabrashidi94@gmail.com"
+          password: "dp89232112"
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
