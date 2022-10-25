@@ -21,7 +21,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
       - name: Build & push Docker image
-        uses: bitovi/github-actions-docker-publish@v1.0.7
+        uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: 946169008/java-ci-cd-github
           tags: latest
